@@ -17,19 +17,24 @@ public class Car {
 
     static ArrayList<Car> cars = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return  name + " " +  color + " " + speed;
+    }
+
     public static ArrayList<Car> getCars() {
         return cars;
     }
 
-    public static void loadFromFile() throws IOException {
+ /*   public static void loadFromFile() throws IOException {
         List<String> lines = Files.readAllLines(Paths.get("carslist"));
         for (String s: lines) {
-            String[] words = s.split(" ");
-            Car cat = new Car(words[0], words[1], words[2]);
+            String[] word = s.split(" ");
+            Car cat = new Car(word[0], word[1], word[2]);
             cars.add(cat);
         }
         System.out.println(cars);
-    }
+    }*/
 }
 
 
