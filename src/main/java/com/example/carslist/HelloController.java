@@ -15,5 +15,6 @@ public class HelloController {
     public void initialize() throws IOException {
         Car.loadFromFile();
         list.setItems(Car.loadFromFile());
+        list.setItems(Car.loadFromFile());
     }
 }
